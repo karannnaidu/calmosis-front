@@ -6,7 +6,7 @@ import { FaFacebook } from "react-icons/fa"
 const Footer = () => {
   return (
     <footer className="p-2" style={{ marginTop: "20px" }}>
-      <div>
+      <div className="topwrapper">
         <p className="middle">
           All our products are recognized and approved by the state AYUSH
           Department, Madhya Pradesh.
@@ -30,11 +30,9 @@ const Footer = () => {
 
         </ul>
       </div>
-
-
       <div className="table">
 
-        <div className="row">
+        {/* <div className="row">
           <div className="address">
             <p className="w-[250px]">
               <span
@@ -52,28 +50,34 @@ const Footer = () => {
               </span>
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="row">
-          <p className="w-[250px]">
+          <p className="sm:w-[300px]">
             <span
               style={{
                 color: "white",
                 fontSize: "20px",
               }}
             >
-              Quick Contact
+              Contact US
             </span>
             <br />
-            <span style={{ paddingTop: "5px" }}>
-              <p>calm@calmosis.com</p>
-              <p>Tel; +91-790-890-890</p>
-            </span>
+            <div className="flex flex-col g-4">
+              <span>
+                <span style={{ color: "#fff" }}>HQ: </span>Unispace business center, Whitefield, EPIP Zone, Bengaluru, Karnataka, India, 560066
+              </span>
+              <span style={{ paddingTop: "5px" }}>
+                <p>calm@calmosis.com</p>
+                <p>Tel; +91-790-890-890</p>
+              </span>
+            </div>
+
           </p>
         </div>
 
         <div className="row">
-          <p className="w-[250px]">
+          <p className="sm:w-[250px]">
             <span
               style={{
                 color: "white",
@@ -147,6 +151,27 @@ const Footer = () => {
           </p>
         </div>
 
+      </div>
+
+      <div className="mobile-socials">
+        <ul className="flex socials">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61552363868158">
+              <FaFacebook />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/calmosis.official/">
+              <FiInstagram />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/channel/UCjA4zYzm__jA_GiGMjZZsXA"><FaYoutube /></a>
+          </li>
+
+        </ul>
       </div>
 
       <div className="bottom">

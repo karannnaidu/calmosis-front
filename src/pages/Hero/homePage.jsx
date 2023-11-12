@@ -35,11 +35,11 @@ const HomePage = () => {
       {/* <div className="bg md:flex hidden">
         <img className="bg md:flex hidden home_image" src="blend_bg.png" alt="" />
       </div> */}
-      <p className="text-centre text-center justify-center items-center centre sm:text-[30px] text-[16px] sm:p-16 xs:p-8 px-6 py-12" >
+      <p className="text-centre text-center justify-center items-center centre sm:text-[30px] text-[16px] sm:p-16 xs:p-8 px-6 py-4 pt-16" >
         Experience the epitome of trust with our THC and CBD
         full-spectrum products, perfectly tailored to enhance your lifestyle.
       </p>
-      <div className="divider md:flex row ">
+      <div className="divider md:flex row">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{
@@ -52,7 +52,7 @@ const HomePage = () => {
           }}
           className="image home_image"
         >
-          <img src="./home_one_left.png" alt="" />
+          <img src="./home_one_left.svg" alt="" />
         </motion.div>
         <motion.div
           className=" sm:p-8 xs:p-2 px-6 py-6 text"
@@ -70,18 +70,19 @@ const HomePage = () => {
           <p className="text-[15px] md:text-[20px] text-start  w-[42vh] sm:w-full">
             Introducing "Peace Mantra," our remarkable product that reflects our unwavering dedication to holistic well-being. But that's not all. "Peace Mantra" is a versatile elixir renowned for improving sleep quality enhancing cognitive function,and promoting sexual wellness, amongst other health benefits.
             <br />
-            <a href="#">Know More</a>
+            {/* <a href="#">Know More</a> */}
           </p>
 
-          <div className="btn">
+          <div className="btn rounded-full overflow-hidden">
             <a href="/peace-mantra">
-              <span>Shop Now</span>
+              <span>Buy Now</span>
               <svg
                 width="58"
                 height="46"
                 viewBox="0 0 58 46"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rounded-l-[20px]"
               >
                 <rect
                   x="1.5"
@@ -115,7 +116,7 @@ const HomePage = () => {
           }}
           className="image flex  md:hidden home_image"
         >
-          <img src="./home_two_right.png" alt="" />
+          <img src="./home_two_right.svg" alt="" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -133,18 +134,19 @@ const HomePage = () => {
           <p className="text-[15px] md:text-[20px] text-start   w-[42vh] sm:w-full">
             Introducing Sleep Mantra - your Ayurvedic ally for a revitalizing night's sleep! Our expertly crafted elixir synchronizes with your Endocannabinoid System (ECS) to ensure you awaken refreshed and prepared for a new day. Quality sleep is essential for a well-rested and vibrant life, and "Sleep Mantra" is your guide to achieving Ayurvedic well-being.
             <br />
-            <a href="#">Know More</a>{" "}
+            {/* <a href="#">Know More</a>{" "} */}
           </p>
 
-          <div className="btn">
+          <div className="btn rounded-full overflow-hidden">
             <a href="/sleep-mantra">
-              <span>Shop Now</span>
+              <span>Buy Now</span>
               <svg
                 width="58"
                 height="46"
                 viewBox="0 0 58 46"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="rounded-l-[20px]"
               >
                 <rect
                   x="1.5"
@@ -176,10 +178,10 @@ const HomePage = () => {
           }}
           className="image md:flex hidden home_image"
         >
-          <img src="./home_two_right.png" alt="" />
+          <img src="./home_two_right.svg" alt="" />
         </motion.div>
       </div>
-      <div style={{ marginTop: "70px" }}>
+      <div className="sm:mt-12 mt-6">
         <p className="heading text-[30px] sm:text-[70px] sm:p-16 xs:p-8 px-6 py-12">
           <span className="text-yellow-400	">Free!</span>  Ayurvedic Doctor Consultation for Your Hemp Journey
         </p>
@@ -196,7 +198,7 @@ const HomePage = () => {
           }}
           className="workthroughg "
         >
-          <img src="./group2.png" />
+          <img src="./Group2.svg" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -210,7 +212,7 @@ const HomePage = () => {
           }}
           className="workthrough "
         >
-          <img src="./workthrough.png" />
+          <img src="./workthrough.svg" />
         </motion.div>
         <div className="story sm:p-16 xs:p-8 px-6 py-12" style={{ marginTop: "30px" }}>
           <p className="text-[13px] md:text-[18px]">Our Story</p>
@@ -228,7 +230,7 @@ const HomePage = () => {
               find solace in the serenity of a calm oasis amidst life's journey.
             </p>
 
-            <a className="btn-style-2" href="#">
+            <a className="btn-style-2" href="/about">
               Know More...
             </a>
           </div>
@@ -246,12 +248,12 @@ const HomePage = () => {
             }}
             className="flower w-[20vh] right-[-62px] sm:left-[160vh] sm:w-full top-[34vh] md:top-[0]"
           >
-            <img src="./flower.png" alt="" />
+            <img src="./flower.svg" alt="" />
           </motion.div>
         </div>
       </div>
 
-      <div
+      {/* <div
         style={{ marginTop: "100px", marginBottom: "200px" }}
         className="testimonial "
       >
@@ -277,9 +279,9 @@ const HomePage = () => {
             );
           })}
         </Swiper>
-      </div>
+      </div> */}
 
-      <div className="line" />
+      <div className="line"/>
 
       <Footer />
     </div>

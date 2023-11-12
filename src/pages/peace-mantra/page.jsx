@@ -763,7 +763,7 @@ const PeaceMantra = () => {
                   that's not all. "Peace Mantra" is a versatile elixir renowned
                   for improving sleep quality enhancing cognitive function,and
                   promoting sexual wellness, amongst other health benefits.
-                  <br /> <a href="#desc-peace">Know More</a>
+                  {/* <br /> <a href="#desc-peace">Know More</a> */}
                 </p>
               </div>
               <div className="price">
@@ -771,7 +771,7 @@ const PeaceMantra = () => {
               </div>
 
               <div className="row">
-                <div className="fennel">
+                {/* <div className="fennel">
                   <p>Flavour</p>
                   <div className="choose">
                     <span
@@ -786,9 +786,9 @@ const PeaceMantra = () => {
                     </span>
 
                   </div>
-                </div>
+                </div> */}
 
-                <div className=" variants relative md:left-[-15vh]">
+                <div className=" variants relative">
                   <p>Variant</p>
                   <div className="choose">
                     <span
@@ -832,7 +832,7 @@ const PeaceMantra = () => {
                 </div>
               </div>
 
-              <div className="choose subscription">
+              {/* <div className="choose subscription">
                 <span
                   onClick={() => {
                     setIsOneTime(true);
@@ -843,42 +843,43 @@ const PeaceMantra = () => {
                 >
                   One-time purchase: ₹{price * quantity}
                 </span>
-              </div>
+              </div> */}
+              <div className="buttons">
 
-              <div className="btns one">
-                <div className="btn" onClick={() => addToCart(false)}>
-                  <a href="#" style={{ marginLeft: "4px" }}>
-                    {loading ? (
-                      <div className="simple-spinner">
-                        <span></span>
-                      </div>
-                    ) : (
-                      "Add to Cart"
-                    )}
-                    <svg
-                      width="58"
-                      height="46"
-                      viewBox="0 0 58 46"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        x="1.5"
-                        y="1.5"
-                        width="55"
-                        height="43"
-                        fill="#F2D101"
-                        stroke="#F2D101"
-                        stroke-width="3"
-                      />
-                      <path
-                        d="M16 21.5C15.1716 21.5 14.5 22.1716 14.5 23C14.5 23.8284 15.1716 24.5 16 24.5V21.5ZM42.0607 24.0607C42.6464 23.4749 42.6464 22.5251 42.0607 21.9393L32.5147 12.3934C31.9289 11.8076 30.9792 11.8076 30.3934 12.3934C29.8076 12.9792 29.8076 13.9289 30.3934 14.5147L38.8787 23L30.3934 31.4853C29.8076 32.0711 29.8076 33.0208 30.3934 33.6066C30.9792 34.1924 31.9289 34.1924 32.5147 33.6066L42.0607 24.0607ZM16 24.5L41 24.5V21.5L16 21.5V24.5Z"
-                        fill="#466F44"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                {/* <div className="btn">
+                <div className="btns one">
+                  <div className="btn" onClick={() => addToCart(false)}>
+                    <a href="#" style={{ marginLeft: "4px" }}>
+                      {loading ? (
+                        <div className="simple-spinner">
+                          <span></span>
+                        </div>
+                      ) : (
+                        "Add to Cart"
+                      )}
+                      <svg
+                        width="58"
+                        height="46"
+                        viewBox="0 0 58 46"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1.5"
+                          y="1.5"
+                          width="55"
+                          height="43"
+                          fill="#F2D101"
+                          stroke="#F2D101"
+                          stroke-width="3"
+                        />
+                        <path
+                          d="M16 21.5C15.1716 21.5 14.5 22.1716 14.5 23C14.5 23.8284 15.1716 24.5 16 24.5V21.5ZM42.0607 24.0607C42.6464 23.4749 42.6464 22.5251 42.0607 21.9393L32.5147 12.3934C31.9289 11.8076 30.9792 11.8076 30.3934 12.3934C29.8076 12.9792 29.8076 13.9289 30.3934 14.5147L38.8787 23L30.3934 31.4853C29.8076 32.0711 29.8076 33.0208 30.3934 33.6066C30.9792 34.1924 31.9289 34.1924 32.5147 33.6066L42.0607 24.0607ZM16 24.5L41 24.5V21.5L16 21.5V24.5Z"
+                          fill="#466F44"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  {/* <div className="btn">
                   <a href="/checkout">
                     <span>Checkout</span>
                     <svg
@@ -904,7 +905,76 @@ const PeaceMantra = () => {
                     </svg>
                   </a>
                 </div> */}
+                </div>
+
+                <div className="btns one">
+                  <div className="btn"
+                    onClick={() => {
+                      setIsOneTime(true);
+                      setIsSubscription(false);
+                      addToCart(true);
+                    }}
+                  >
+                    <a href="#" style={{ marginLeft: "4px" }}>
+                      {loading ? (
+                        <div className="simple-spinner">
+                          <span></span>
+                        </div>
+                      ) : (
+                        "Checkout"
+                      )}
+                      <svg
+                        width="58"
+                        height="46"
+                        viewBox="0 0 58 46"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1.5"
+                          y="1.5"
+                          width="55"
+                          height="43"
+                          fill="#F2D101"
+                          stroke="#F2D101"
+                          stroke-width="3"
+                        />
+                        <path
+                          d="M16 21.5C15.1716 21.5 14.5 22.1716 14.5 23C14.5 23.8284 15.1716 24.5 16 24.5V21.5ZM42.0607 24.0607C42.6464 23.4749 42.6464 22.5251 42.0607 21.9393L32.5147 12.3934C31.9289 11.8076 30.9792 11.8076 30.3934 12.3934C29.8076 12.9792 29.8076 13.9289 30.3934 14.5147L38.8787 23L30.3934 31.4853C29.8076 32.0711 29.8076 33.0208 30.3934 33.6066C30.9792 34.1924 31.9289 34.1924 32.5147 33.6066L42.0607 24.0607ZM16 24.5L41 24.5V21.5L16 21.5V24.5Z"
+                          fill="#466F44"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                  {/* <div className="btn">
+                  <a href="/checkout">
+                    <span>Checkout</span>
+                    <svg
+                      width="58"
+                      height="46"
+                      viewBox="0 0 58 46"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="1.5"
+                        y="1.5"
+                        width="55"
+                        height="43"
+                        fill="#F2D101"
+                        stroke="#F2D101"
+                        stroke-width="3"
+                      />
+                      <path
+                        d="M16 21.5C15.1716 21.5 14.5 22.1716 14.5 23C14.5 23.8284 15.1716 24.5 16 24.5V21.5ZM42.0607 24.0607C42.6464 23.4749 42.6464 22.5251 42.0607 21.9393L32.5147 12.3934C31.9289 11.8076 30.9792 11.8076 30.3934 12.3934C29.8076 12.9792 29.8076 13.9289 30.3934 14.5147L38.8787 23L30.3934 31.4853C29.8076 32.0711 29.8076 33.0208 30.3934 33.6066C30.9792 34.1924 31.9289 34.1924 32.5147 33.6066L42.0607 24.0607ZM16 24.5L41 24.5V21.5L16 21.5V24.5Z"
+                        fill="#466F44"
+                      />
+                    </svg>
+                  </a>
+                </div> */}
+                </div>
               </div>
+
             </div>
 
             <motion.div

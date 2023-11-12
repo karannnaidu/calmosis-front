@@ -17,6 +17,7 @@ main.shop_list {
     padding-top: 100px;
     color: white;
 
+
     .home {
       display: flex;
       align-items: center;
@@ -56,6 +57,7 @@ main.shop_list {
 
         @media (max-width:768px) {
           font-size: 40px;
+          white-space: nowrap;
         }
       }
 
@@ -174,15 +176,34 @@ main.shop_list {
     }
   }
 
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include mobile{
+      margin-left: -10px;
+    }
+  }
+
+
   .btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
     // if only one item is left
     &.one {
       justify-content: flex-start;
+      white-space: nowrap;
+
+      a{
+        gap: 10px;
+        font-size: 16px;
+        svg{
+          width: 45px;
+          height: 36px; 
+        }
+      }
     }
   }
 }
